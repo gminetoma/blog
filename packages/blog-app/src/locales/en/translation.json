@@ -1,0 +1,16 @@
+{
+  "post": {
+    "back-to-all": "← All posts",
+    "min-read": "min read",
+    "by": "By"
+  },
+  "footer": {
+    "copyright": "© {{year}} Gustavo Minoru. All rights reserved."
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}

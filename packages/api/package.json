@@ -1,0 +1,16 @@
+{
+	"name": "api",
+	"private": true,
+	"scripts": {
+		"dev": "go tool air",
+		"migrate:up": "make migrate-up",
+		"migrate:down": "make migrate-down",
+		"migrate:down:all": "make migrate-down-all",
+		"migrate:create": "make migrate-create",
+		"codegen": "make sqlc && make gqlgen",
+		"test": "go test ./...",
+		"seed": "go run ./cmd/seed",
+		"build": "go build ./...",
+		"tidy": "go mod tidy"
+	}
+}

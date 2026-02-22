@@ -1,0 +1,30 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "internal/auth/infrastructure/sqlc/"
+    schema: "migrations/"
+    gen:
+      go:
+        package: "sqlc"
+        out: "internal/auth/infrastructure/sqlc/"
+  - engine: "postgresql"
+    queries: "internal/comment/infrastructure/sqlc/"
+    schema: "migrations/"
+    gen:
+      go:
+        package: "sqlc"
+        out: "internal/comment/infrastructure/sqlc/"
+  - engine: "postgresql"
+    queries: "internal/like/infrastructure/sqlc/"
+    schema: "migrations/"
+    gen:
+      go:
+        package: "sqlc"
+        out: "internal/like/infrastructure/sqlc/"
+  - engine: "postgresql"
+    queries: "internal/view/infrastructure/sqlc/"
+    schema: "migrations/"
+    gen:
+      go:
+        package: "sqlc"
+        out: "internal/view/infrastructure/sqlc/"
